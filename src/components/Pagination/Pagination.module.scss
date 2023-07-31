@@ -1,0 +1,29 @@
+@import '../../styles/variables.scss';
+
+.pagination, .info, .buttons, .numButtons {
+  display: flex;
+}
+
+.pagination {
+  padding: 30px;
+  justify-content: space-around;
+  font-size: 18px;
+  border-top: 1px solid black;
+}
+
+.arrowButton {
+  border-radius: 50%;
+  border: none;
+  background-color: white;
+  cursor: pointer;
+  font-weight: 800;
+  font-size: 22px;
+
+  &:hover {
+    background-color: $grey;
+  }
+}
+
+.buttons {
+  align-items: baseline;
+}

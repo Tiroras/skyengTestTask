@@ -1,0 +1,19 @@
+@import '../../styles/variables.scss';
+
+.list {
+  margin: 0 auto;
+}
+
+.title {
+  display: grid;
+  grid-template-columns: $elementGridColumns;
+  gap: $elementGridGap;
+  font-weight: 800;
+  padding: 10px;
+}
+
+.order {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}

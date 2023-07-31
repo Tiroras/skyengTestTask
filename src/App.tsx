@@ -1,26 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { type ReactElement } from 'react'
+import { UsersProvider } from './context/usersContext'
+import { Form } from './components/Form'
+import { List } from './components/List'
+import { Pagination } from './components/Pagination'
+import styles from './App.module.scss'
 
-function App() {
+function App (): ReactElement {
+  // const [login, setLogin] = useState('')
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <UsersProvider>
+      <main className={styles.main}>
+        <Form />
+        <List />
+        <Pagination />
+      </main>
+    </UsersProvider>
+  )
 }
 
-export default App;
+export default App

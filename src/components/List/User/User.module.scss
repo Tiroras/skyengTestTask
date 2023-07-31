@@ -1,0 +1,23 @@
+@import '../../../styles/variables.scss';
+
+.user {
+  display: grid;
+  grid-template-columns: $elementGridColumns;
+  gap: $elementGridGap;
+  cursor: pointer;
+  padding: 10px;
+  border-radius: 10px;
+
+  &:hover {
+    transition: 300ms;
+    background-color: $grey;
+  }
+}
+
+.id, .login {
+  margin: auto 0;
+}
+
+.button {
+  margin: auto
+}

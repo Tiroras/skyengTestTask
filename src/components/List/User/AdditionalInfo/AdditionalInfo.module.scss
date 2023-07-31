@@ -1,0 +1,34 @@
+@import '../../../../styles/variables.scss';
+
+.githubLink {
+  font-weight: 800;
+  font-size: 18px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.title {
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px;
+}
+
+.list {
+  max-height: 300px;
+  width: 700px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+
+  &::-webkit-scrollbar {
+    width: 10px
+  }
+   
+  &::-webkit-scrollbar-track {
+    padding: 0 2px;
+  }
+   
+  &::-webkit-scrollbar-thumb {
+    background-color: $grey2;
+    border-radius: 5px;
+  }
+}

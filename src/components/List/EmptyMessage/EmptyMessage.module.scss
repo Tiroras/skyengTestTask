@@ -1,0 +1,11 @@
+@import '../../../styles/variables.scss';
+
+.message {
+  font-size: 26px;
+  font-weight: 800;
+  color: $grey2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 600px;
+}

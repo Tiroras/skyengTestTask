@@ -1,0 +1,20 @@
+@import "../../../../../styles/variables.scss";
+
+.repository {
+  display: grid;
+  grid-template-columns: 100px 150px 290px 80px 80px;
+  gap: $elementGridGap;
+  cursor: pointer;
+  border-bottom: $additionalInfoBorder;
+  transition: 300ms;
+
+  &:hover {
+    background-color: $grey;
+  }
+}
+
+.description, .name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
