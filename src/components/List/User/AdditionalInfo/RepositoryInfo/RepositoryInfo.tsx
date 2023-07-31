@@ -1,7 +1,7 @@
 import React from 'react'
 import { type IRepos } from '../../../../../types'
 import styles from './RepositoryInfo.module.scss'
-import { transformDate } from '../../../../../utils/transformDate'
+import { transformDate } from '../../../../../utils/transformDate/transformDate'
 
 interface IProps {
   info: IRepos

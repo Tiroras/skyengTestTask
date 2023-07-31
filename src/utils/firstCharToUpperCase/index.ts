@@ -1,0 +1,1 @@
+export { firstCharToUpperCase } from './firstCharToUpperCase'

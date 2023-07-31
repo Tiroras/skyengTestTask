@@ -30,7 +30,7 @@ const initialData: InitialDataType = {
   changeLogin: noop
 }
 
-const UsersContext = createContext(initialData)
+export const UsersContext = createContext(initialData)
 
 export const UsersProvider: FC<PropsWithChildren> = memo(({ children }) => {
   const [users, setUsers] = useState<IUser[]>(initialData.users)

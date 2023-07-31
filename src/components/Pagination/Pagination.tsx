@@ -36,11 +36,16 @@ export const Pagination: React.FC = () => {
 
   return (
     <div className={styles.pagination}>
-      <div className={styles.info}>
+      <div className={styles.info} data-testid={'paginationInfo'}>
         Users {firstNumUsers} to {secondNumUsers} out of {total}
       </div>
       <div className={styles.buttons}>
-        <button className={styles.arrowButton} onClick={onPrevPage} disabled={isFirstPage}>&lt;</button>
+        <button
+          data-testid={'paginationPrevButton'}
+          className={styles.arrowButton}
+          onClick={onPrevPage}
+          disabled={isFirstPage}
+        >&lt;</button>
         <div className={styles.numButtons}>
           {showToFirstPageButton && <><PageNumButton page={0} /> ...</>}
           {!isFirstPage && <PageNumButton page={prevPage} />}
@@ -48,7 +53,12 @@ export const Pagination: React.FC = () => {
           {showToNextPageButton && <PageNumButton page={nextPage} />}
           {showToLastPageButton && <>... <PageNumButton page={totalPages - 1} /></>}
         </div>
-        <button className={styles.arrowButton} onClick={onNextPage} disabled={isLastPage}>&gt;</button>
+        <button
+          data-testid={'paginationNextButton'}
+          className={styles.arrowButton}
+          onClick={onNextPage}
+          disabled={isLastPage}
+          >&gt;</button>
       </div>
       <div />
     </div>

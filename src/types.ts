@@ -14,7 +14,6 @@ export interface IUser {
   html_url: string
   followers_url: string
   repos_url: string
-  received_events_url: string
 }
 
 export interface GitHubResponse<T> {
